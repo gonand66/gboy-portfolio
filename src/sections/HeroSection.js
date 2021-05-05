@@ -5,7 +5,7 @@ function HeroSection() {
   return (
     <Container>
       <MaskContainer />
-      <a href={"https://g-music2021.web.app/"} target="_blank" rel="noreferrer">
+      <a href={"https://github.com/gonand66/gboy-portfolio"} target="_blank" rel="noreferrer">
         <i class="fas fa-laptop-code" style={iconStyle}></i>
       </a>
       <Title first>Hi, I'm Natthapong</Title>
