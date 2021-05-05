@@ -29,11 +29,15 @@ const Title = styled.p`
   color: #feffde;
   font-size: 35px;
   text-align: center;
+  white-space: nowrap;
+  width: 0;
   animation: ${(props) =>
     props.first ? "title 4s 1.7s linear forwards" : "title 4s 2.8s linear forwards"};
   overflow: hidden;
-  white-space: nowrap;
-  width: 0;
+  /* @media only screen and (max-width: 500px) {
+    animation: ${(props) =>
+      props.first ? "title 1.5s 1.5s linear forwards" : "title 1.5s 3s linear forwards"};
+  } */
   @keyframes title {
     to {
       width: 100%;
