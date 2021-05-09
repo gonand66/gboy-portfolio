@@ -31,8 +31,8 @@ function MyDetailBox() {
         <h3>Personal Details</h3> <br />
         <p>Name Natthapong Songngam (Gone)</p> <br />
         <p>Birth Date : 7 Dec 1997</p> <br />
-        <p>Age : 22</p> <br />
-        <p>Heigh : 167 cm. Weight :62 kk.</p> <br />
+        <p>Age : 23</p> <br />
+        <p>Heigh : 167 cm. Weight :62 kg.</p> <br />
         <p>Languege : Thai, English</p> <br />
       </RightSide>
     );
@@ -71,24 +71,24 @@ function MyDetailBox() {
   };
 
   return (
-    <InfoBox>
+    <Container>
       <LeftSide>
         {renderButton("Personal")}
         {renderButton("Hobby")}
         {renderButton("Education")}
       </LeftSide>
       {renderRightSide()}
-    </InfoBox>
+    </Container>
   );
 }
 
 export default MyDetailBox;
 
-const InfoBox = styled.div`
+const Container = styled.div`
   background-color: #feffde;
   height: 260px;
   width: 500px;
-  margin: 20px;
+  margin-block: 20px;
   display: flex;
   padding: 5px;
   border-radius: 5px;

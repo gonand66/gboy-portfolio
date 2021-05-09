@@ -11,7 +11,8 @@ function SkillSection() {
     const textStyle = { color: "#1A5D44", fontSize: 20 };
     return (
       <IconContainer>
-        <i className={icon} style={iconStyle}></i><br/> 
+        <i className={icon} style={iconStyle}></i>
+        <br />
         <p style={textStyle}>{text}</p>
       </IconContainer>
     );
@@ -21,7 +22,8 @@ function SkillSection() {
     const textStyle = { color: "#1A5D44", fontSize: 20 };
     return (
       <IconContainer>
-        <img src={src} style={imgStyle} alt="ts" /><br/> 
+        <img src={src} style={imgStyle} alt="ts" />
+        <br />
         <p style={textStyle}>{text}</p>
       </IconContainer>
     );
@@ -65,7 +67,9 @@ const IconContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 3rem;
+  margin-inline: 40px;
+  margin-block: 30px;
+  width: 120px;
 `;
 
 const Box = styled.div`

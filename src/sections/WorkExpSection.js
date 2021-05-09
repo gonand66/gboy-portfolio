@@ -57,9 +57,10 @@ const Box = styled.div`
   background-color: white;
   padding: 10px;
   border-radius: 10px;
-  margin: 20px;
 `;
 const Image = styled(ImageFrame)`
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
+    margin: 20px;
 `;
 const iconStyle = { color: "#1A5D44", fontSize: 30, margin: 10, cursor: "pointer" };

@@ -14,19 +14,12 @@ function ImageMe() {
 export default ImageMe;
 
 const ImageFrame = styled.div`
-  transition: 0.2s linear;
+  transition: 0.1s linear;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   margin: 20px;
+  
   :hover {
-    animation: shake 0.5s;
-  }
-  @keyframes shake {
-    25% {
-      transform: rotate(-10deg);
-    }
-    75% {
-      transform: rotate(10deg);
-    }
+    transform: rotate(-7deg);
   }
 `;
 const Image = styled.img`

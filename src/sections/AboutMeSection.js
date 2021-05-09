@@ -17,15 +17,13 @@ function AboutMeSection() {
             graduation project.
           </p>
           <p>
-            So after graduated, I develope my skills an learned more thing about developing
+            So after graduated, I develope my skills and learned more things about developing
             technology by my self.
           </p>
           <p>
             If you want some one who always ready for learned new things, I think I am a right one
             for you.
           </p>
-          {/* I have about five month exeperience as Jr.Full-stack developer.
-           */}
         </p>
       </TextBox>
     );
@@ -37,7 +35,9 @@ function AboutMeSection() {
       <ContentContainer>
         <ImageMe />
         {renderTextBox()}
-        <MyDetailBox />
+        <InfoBox>
+          <MyDetailBox />
+        </InfoBox>
       </ContentContainer>
     </SectionContainer>
   );
@@ -53,4 +53,9 @@ const TextBox = styled.div`
   min-height: 150px;
   resize: both;
   overflow: auto;
+`;
+const InfoBox = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
 `;
