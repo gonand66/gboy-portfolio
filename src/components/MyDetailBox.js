@@ -4,10 +4,10 @@ import styled from "styled-components";
 function MyDetailBox() {
   const [activeButton, setbutton] = useState("Personal");
 
-  const renderButton = (text) => {
+  const renderButton = (id, icon) => {
     return (
-      <CircleButton active={activeButton === text} onClick={() => setbutton(text)}>
-        {text}
+      <CircleButton active={activeButton === id} onClick={() => setbutton(id)}>
+        <i class={icon} style={{ fontSize: 28 }}></i>
       </CircleButton>
     );
   };
@@ -73,9 +73,9 @@ function MyDetailBox() {
   return (
     <Container>
       <LeftSide>
-        {renderButton("Personal")}
-        {renderButton("Hobby")}
-        {renderButton("Education")}
+        {renderButton("Personal", "far fa-address-card")}
+        {renderButton("Hobby", "fas fa-music")}
+        {renderButton("Education", "fas fa-graduation-cap")}
       </LeftSide>
       {renderRightSide()}
     </Container>
@@ -86,7 +86,7 @@ export default MyDetailBox;
 
 const Container = styled.div`
   background-color: #feffde;
-  height: 260px;
+  height: 270px;
   width: 500px;
   margin-block: 20px;
   display: flex;
@@ -108,7 +108,7 @@ const CircleButton = styled.button`
   margin: 7px;
   border: none;
   color: ${(props) => (props.active ? "white" : "#766161")};
-  box-shadow: 1px 1px 2px grey;
+  cursor: pointer;
   :active {
     background: linear-gradient(to right, #56ab2f, #a8e063);
   }
