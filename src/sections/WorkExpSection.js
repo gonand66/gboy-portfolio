@@ -6,7 +6,7 @@ import { ContentContainer, ImageFrame, SectionContainer, TextTitle, Timeline } f
 function WorkExpSection() {
   return (
     <SectionContainer bgColor={"#ddffbc"}>
-      <TextTitle color={"#1A5D44"}>Work experiences</TextTitle>
+      <TextTitle color={"#1A5D44"}>Work experience</TextTitle>
       <ContentContainer>
         <Timeline />
         <Box>
